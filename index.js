@@ -19,7 +19,7 @@ const loader = new THREE.TextureLoader();
 const geometry = new THREE.IcosahedronGeometry(1, detail);
 
 const material = new THREE.MeshPhongMaterial({
-  map: loader.load("./public/img/earth_1.jpg"),
+  map: loader.load("/img/earth_1.jpg"),
 });
 
 const earthMesh = new THREE.Mesh(geometry, material);
